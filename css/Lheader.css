@@ -1,0 +1,53 @@
+* {box-sizing: border-box;}
+
+
+.header {
+  overflow: hidden;
+ background-image: url('shop.jpg');
+  padding: 9px 22px;
+  background: white;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  background: white;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  background: white;
+}
+
+.header a:hover {
+  background-color: rgb(241, 178, 193);
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
